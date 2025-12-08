@@ -86,6 +86,15 @@ compilation.
 typst watch thesis.typ
 ```
 
+Or use nix (no Typst installation required):
+```sh
+# Creates `thesis.pdf` in working directory.
+nix develop -c typst compile thesis.typ
+
+# Watches source files and recompiles on changes.
+nix develop -c typst watch thesis.typ
+```
+
 ### Updating Your Repository to the Latest Template Version
 If you have created your thesis repository using the Typst Thesis Template, you might want to update your repository to incorporate the latest changes from the template. Follow these steps to sync your repository with the latest version of the template.
 

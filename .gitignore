@@ -1,3 +1,4 @@
 *.pdf
+.direnv
 .idea
-.vscode
+/result
