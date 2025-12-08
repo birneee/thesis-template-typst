@@ -1,0 +1,20 @@
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: DeterminateSystems/nix-installer-action@v21
+      - uses: DeterminateSystems/magic-nix-cache-action@v13
+      - uses: DeterminateSystems/flake-checker-action@v12
+      - run: nix build -L
+      - uses: softprops/action-gh-release@v2.5.0
+        with:
+          files: result/*

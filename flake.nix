@@ -29,10 +29,13 @@
           ];
           buildPhase = ''
             typst compile thesis.typ
+            typst compile proposal.typ
+            typst compile registration_certificate.typ
+            typst compile feedbacklog.typ
           '';
           installPhase = ''
             mkdir -p $out
-            cp thesis.pdf $out/
+            cp *.pdf $out/
           '';
           env = {
             TYPST_FONT_PATHS = pkgs.newcomputermodern;
