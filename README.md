@@ -2,15 +2,15 @@
 This repository provides a comprehensive Typst template for writing your Bachelor's or Master's thesis at the CIT School of TUM (Technical University of Munich). It includes two types of documents: a proposal template and a thesis template, both specifically designed for students in the field of Informatics. For more information about writing a thesis at the CIT School, please visit the [official CIT website](https://www.cit.tum.de/en/cit/studies/students/thesis-completing-your-studies/informatics/).
 
 > [!IMPORTANT]
-> This is only a template. You have to adapt the template to your thesis and discuss the structure of your thesis with your supervisor!
+> This is only a template. You have to adapt the template to your thesis and discuss the structure of your thesis with your supervisor(s)!
 
 
 ## Guidelines 
 > [!TIP]
-> __Please thorougly read the relevant guidelines and hints!__
+> __Please thoroughly read the relevant guidelines and hints!__
 >
+> - Applied Education Technologies [link](https://outline.aet.cit.tum.de/doc/thesis-XCYjpC8q1a) (TUM Login Required)
 > - Informatics [link](https://www.cit.tum.de/en/cit/studies/students/thesis-completing-your-studies/informatics/)
-> - Applied Software Engineering [confluence](https://confluence.ase.in.tum.de/display/EduResStud/How+to+thesis) (TUM Login Required)
 > - Chair of Connected Mobility [link](https://cmvm32.cit.tum.de/lib/exe/fetch.php?media=pdf:public:thesis_guidelines_2017_12_13.pdf)
 
 
@@ -40,7 +40,7 @@ Fill in your thesis details in the [`metadata.typ`](/metadata.typ) file:
 * Degree (Bachelor or Master)
 * Your study program
 * English and German title
-* Supervisor and examiner
+* Examiner and supervisor(s)
 * Your name (without e-mail address or matriculation number)
 * The start and submission date
 
