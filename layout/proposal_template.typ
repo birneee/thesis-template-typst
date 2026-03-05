@@ -1,5 +1,4 @@
 #import "/layout/titlepage.typ": *
-#import "/layout/transparency_ai_tools.typ": transparency_ai_tools as transparency_ai_tools_layout
 #import "/utils/print_page_break.typ": *
 #import "/layout/fonts.typ": *
 
@@ -16,7 +15,6 @@
   author: "",
   startDate: datetime,
   submissionDate: datetime,
-  transparency_ai_tools: "",
   is_print: false,
   body,
 ) = {
@@ -64,7 +62,7 @@
   set par(leading: 1em, justify: true, first-line-indent: 2em)
 
   // --- Citation Style ---
-  set cite(style: "alphanumeric")
+  set cite(style: "ieee")
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
@@ -74,5 +72,4 @@
   pagebreak()
   bibliography("/thesis.yml")
   pagebreak()
-  transparency_ai_tools_layout(transparency_ai_tools)
 }

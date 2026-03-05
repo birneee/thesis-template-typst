@@ -2,7 +2,6 @@
 #import "/layout/titlepage.typ": *
 #import "/layout/disclaimer.typ": *
 #import "/layout/acknowledgement.typ": acknowledgement as acknowledgement_layout
-#import "/layout/transparency_ai_tools.typ": transparency_ai_tools as transparency_ai_tools_layout
 #import "/layout/abstract.typ": *
 #import "/utils/print_page_break.typ": *
 #import "/layout/fonts.typ": *
@@ -21,7 +20,6 @@
   abstract_en: "",
   abstract_de: "",
   acknowledgement: "",
-  transparency_ai_tools: "",
   is_print: false,
   body,
 ) = {
@@ -54,7 +52,6 @@
     author: author,
     submissionDate: submissionDate
   )
-  transparency_ai_tools_layout(transparency_ai_tools)
 
   print_page_break(print: is_print)
   
@@ -103,7 +100,7 @@
   set par(leading: 1em)
 
   // --- Citations ---
-  set cite(style: "alphanumeric")
+  set cite(style: "ieee")
 
   // --- Figures ---
   show figure: set text(size: 0.85em)

@@ -14,7 +14,6 @@
   author: author,
   startDate: startDate,
   submissionDate: submissionDate,
-  transparency_ai_tools: include "/content/proposal/transparency_ai_tools.typ",
 )
 
 #TODO(color: red)[ // Remove this block
