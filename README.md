@@ -21,7 +21,11 @@ For detailed installation instructions, please refer to the [official installati
 - Use package managers like `brew` or `pacman` to install Typst. Be aware that the versions in the package managers might lag behind the latest release.
 - If you have a [Rust](https://rustup.rs/) toolchain installed, you can also install the latest development version.
 
-Nix and Docker users, please refer to the official installation guide for detailed instructions.
+- Nix users (flakes must be enabled)
+  - with [direnv](https://direnv.net/): run `direnv allow`
+  - without direnv: run `nix develop`
+
+Docker users, please refer to the official installation guide for detailed instructions.
 
 > [!NOTE]
 > [Git LFS](https://git-lfs.com/) is required in this repository to handle large files, such as figures. Make sure to install it before cloning the repository.
